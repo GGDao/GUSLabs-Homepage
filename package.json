@@ -13,7 +13,6 @@
     "@fortawesome/free-brands-svg-icons": "^6.2.1",
     "@fortawesome/free-solid-svg-icons": "^6.2.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
-    "@ggdao/guscomponentlib": "^0.0.00133",
     "@react-spring/web": "^9.7.3",
     "@types/react-fontawesome": "^1.6.5",
     "autoprefixer": "^10.4.19",
