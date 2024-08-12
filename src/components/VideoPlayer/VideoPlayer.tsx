@@ -5,6 +5,7 @@ interface VideoPlayerProps {
   loop?: boolean;
   autoPlay?: boolean;
   muted?: boolean;
+  hidden?:boolean;
 }
 
 const VideoPlayer = forwardRef<HTMLVideoElement, VideoPlayerProps>(({
@@ -14,7 +15,7 @@ const VideoPlayer = forwardRef<HTMLVideoElement, VideoPlayerProps>(({
   muted = true,
 }, ref) => {
   return (
-    <div className="h-screen w-full relative">
+    <div className={`h-screen w-full relative`}>
       <video
         ref={ref}
         style={{
