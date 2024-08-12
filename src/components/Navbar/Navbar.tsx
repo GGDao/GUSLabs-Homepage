@@ -10,8 +10,14 @@ const Navbar: React.FC<NavbarProps> = () => {
         <button>
           <div className="h-fit w-fit flex items-center justify-center">
             <img className="h-[50px] w-[50px] md:h-[100px] md:w-[100px]" src="/gus_logo_clear.png" />
-            <div className="goldman text-[1.25rem] md:text-[3rem] text-white shadow-lg text-[#4a4a4a] font-bold">
-              GUSLabs
+            <div className="goldman text-[1.25rem] md:text-[3rem] text-white  text-[#4a4a4a] font-bold">
+              <span>
+              IMXArena
+              </span>
+              <sup className="oswald text-sm pl-5 -top-5">
+                powered by GUSlabs
+              </sup>
+
             </div>
           </div>
         </button>
@@ -23,7 +29,6 @@ const Navbar: React.FC<NavbarProps> = () => {
           >
             <i className="fa-brands fa-x-twitter"></i>
           </a>
-
           <a
             href="https://discord.gg/gustakes"
             target="_blank"
