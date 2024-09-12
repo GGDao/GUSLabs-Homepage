@@ -43,7 +43,7 @@ const Footer: React.FC<FooterProps> = ({}) => {
         </a>
       </div>
       <p className="text-center text-gray-700 font-medium">
-        &copy; 2022 Company Ltd. All rights reserved.
+        &copy; 2024 GUSLabs. All rights reserved.
       </p>
     </footer>
   );
