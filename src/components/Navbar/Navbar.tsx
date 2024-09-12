@@ -14,7 +14,7 @@ const Navbar: React.FC<NavbarProps> = () => {
               <span>
               GUStakes 
               </span>
-              <sup className="oswald text-sm pl-5 -top-5">
+              <sup className="oswald text-sm pl-5 -top-5 hidden md:inline-block">
                 powered by GUSlabs
               </sup>
 

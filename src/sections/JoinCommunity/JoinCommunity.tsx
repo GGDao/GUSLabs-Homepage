@@ -15,7 +15,7 @@ const JoinCommunity: React.FC<JoinCommunityProps> = () => {
           where everyone wins.
         </h1>
       </div>
-      <div className="py-5 !mb-20  mx-auto text-center flex flex-col gap-5  bg-gradient-to-r from-[#5c258d] to-[#4389a2]  rounded-2xl w-1/2 h-fit">
+      <div className="py-5 !mb-20 mx-4 mx-auto text-center flex flex-col gap-5  bg-gradient-to-r from-[#5c258d] to-[#4389a2]  rounded-2xl w-[80%] md:w-1/2 h-fit">
         <div className="container grid items-center justify-center gap-8 px-4 text-center md:px-6 lg:grid-cols-2 lg:text-left xl:gap-16">
           <div className="space-y-4">
             <h2 className="text-3xl oswald font-bold tracking-wide text-white sm:text-4xl md:text-5xl text-left">

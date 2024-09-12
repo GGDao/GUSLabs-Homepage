@@ -9,7 +9,7 @@ const PrimaryCTA: React.FC<PrimaryCTAProps> = () => {
   return (
     <div className="relative h-full w-full bg-[rgb(10,10,10)] pb-60">
       <Fade>
-        <div className="relative mx-auto max-w-5xl">
+        <div className="relative mx-auto w-[80%] md:w-full max-w-5xl">
           <div
             className="rounded-xl p-1"
             style={{
