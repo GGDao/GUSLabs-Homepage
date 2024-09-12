@@ -62,7 +62,7 @@ const Team: React.FC<TeamProps> = () => {
                     <p className="text-xl font-semibold leading-snug">
                       {member.name}
                     </p>
-                    <p>{member.role}</p>
+                    <p className="text-white">{member.role}</p>
                   </div>
                 </div>
               </div>
