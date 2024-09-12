@@ -43,7 +43,7 @@ const Team: React.FC<TeamProps> = () => {
   return (
     <div className="relative h-full w-full flex flex-col items-center justify-center bg-[rgb(10,10,10)] py-44">
       <div className="goldman text-white text-[3rem]">Meet the team</div>
-      <div className="roboto text-white text-xl my-10 max-w-[700px] text-center font-semibold">
+      <div className="oswald text-white text-xl my-10 max-w-[700px] text-center font-semibold">
         GUSLabs is a community grown project with many contributors from the
         web3 gaming space. But these few individuals make the magic happen
       </div>
