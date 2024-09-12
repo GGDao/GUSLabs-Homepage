@@ -59,7 +59,7 @@ const Team: React.FC<TeamProps> = () => {
                     src={member.image}
                   />
                   <div className="flex-1 my-4">
-                    <p className="text-xl font-semibold leading-snug">
+                    <p className="text-xl font-semibold leading-snug text-white">
                       {member.name}
                     </p>
                     <p className="text-white">{member.role}</p>
