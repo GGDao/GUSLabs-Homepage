@@ -27,19 +27,19 @@ const JoinCommunity: React.FC<JoinCommunityProps> = () => {
             </p>
           </div>
           <div className="grid grid-cols-3 gap-6 sm:grid-cols-5">
-            <a href="#" className="group flex flex-col items-center justify-center">
+            <a href="https://discord.gg/gustakes" target="_blank" className="group flex flex-col items-center justify-center">
               <img src="/icons/social/neon/discord.png" />
               <span className="oswald font-bold text-gray-200">Discord</span>
             </a>
-            <a href="#" className="group flex flex-col items-center justify-center">
+            <a href="https://x.com/gu_stakes" target="_blank" className="group flex flex-col items-center justify-center">
               <img src="/icons/social/neon/x.png" />
               <span className="oswald font-bold text-gray-200">X</span>
             </a>
-            <a href="#" className="group flex flex-col items-center justify-center">
+            <a href="https://www.twitch.tv/gu_stakes" target="_blank" className="group flex flex-col items-center justify-center">
               <img src="/icons/social/neon/twitch.png" />
               <span className="oswald font-bold text-gray-200">Twitch</span>
             </a>
-            <a href="#" className="group flex flex-col items-center justify-center">
+            <a href="https://medium.com/gustakes" target="_blank" className="group flex flex-col items-center justify-center">
               <img src="/icons/social/neon/medium.png" />
               <span className="oswald font-bold text-gray-200">Medium</span>
             </a>

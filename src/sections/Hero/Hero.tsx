@@ -5,7 +5,12 @@ import { useSpring, useTrail, animated, easings } from "@react-spring/web";
 
 interface HeroProps {}
 const delay = 500;
-const games = ["/gu_logo.png"];
+const games = [
+  {
+    img: "/gu_logo.png",
+    link: "https://godsunchained.com/",
+  },
+];
 
 const Hero: React.FC<HeroProps> = () => {
   const urlNum = Math.floor(Math.random() * 4) + 1;
@@ -128,16 +133,21 @@ const Hero: React.FC<HeroProps> = () => {
             Step into the arena. Stake your Coin. Domainate tournaments. Cement
             your legacy.
           </animated.div>
-          <animated.div 
+          <animated.div
             style={bottomAnimateProps}
-            className="mb-5 mt-0 md:mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
+            className="mb-5 mt-0 md:mt-10 flex items-center justify-center gap-x-6 lg:justify-start"
+          >
             <a
-              href="#"
+              href="https://tournaments.gustakes.gg"
               className="rounded-md goldman bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
             >
-              Get started
+              Enter a Tournament
             </a>
-            <a href="#" className="text-sm goldman font-semibold leading-6 text-white">
+            <a
+              href="https://docs.gustakes.gg"
+              target="_blank"
+              className="text-sm goldman font-semibold leading-6 text-white"
+            >
               Learn more <span aria-hidden="true">→</span>
             </a>
           </animated.div>
@@ -145,11 +155,17 @@ const Hero: React.FC<HeroProps> = () => {
         <div className="h-fit w-full flex items-center justify-center mt-0 md:mt-60 lg:mt-20">
           {trail.map(({ height, ...style }, index) => {
             let width;
-            if (games[index].startsWith("/valeria")) width = "w-[350px]";
+            if (games[index].img.startsWith("/valeria")) width = "w-[350px]";
             else width = "w-[100px] md:w-[200px]";
             return (
               <animated.div key={index} className="trails-text" style={style}>
-                <img className={`${width} h-auto`} src={games[index]} />
+                <a
+                  href={games[index].link}
+                  target="_blank"
+                  className="hover:cursor-pointer"
+                >
+                  <img className={`${width} h-auto`} src={games[index].img} />
+                </a>
               </animated.div>
             );
           })}
@@ -159,7 +175,7 @@ const Hero: React.FC<HeroProps> = () => {
           className="relative h-fit w-full flex flex-col items-center justify-center mt-14"
         >
           <div className="goldman text-[1.5rem] uppercase text-white">
-            Games
+            Explore
           </div>
           <div className="text-[1.35em] text-white animate-bounce">
             <i className="fa-solid fa-chevron-down"></i>

@@ -4,6 +4,8 @@ import { Fade } from "react-awesome-reveal";
 interface PrimaryCTAProps {}
 
 const PrimaryCTA: React.FC<PrimaryCTAProps> = () => {
+  const handleGoToTournament = () => window.location.href = "https://tournaments.gustakes.gg"
+  const handleGoToLearnMore = () => window.open("https://docs.gustakes.gg")
   return (
     <div className="relative h-full w-full bg-[rgb(10,10,10)] pb-60">
       <Fade>
@@ -27,10 +29,10 @@ const PrimaryCTA: React.FC<PrimaryCTAProps> = () => {
                   </p>
                 </div>
                 <div className="flex flex-wrap items-center justify-center gap-6">
-                  <button className="bg-violet-600 lato text-white button-text flex items-center justify-center whitespace-nowrap rounded-md transition-all duration-300 px-8 py-3 text-xs sm:text-sm">
+                  <button onClick={handleGoToTournament} className="bg-violet-600 lato text-white button-text flex items-center justify-center whitespace-nowrap rounded-md transition-all duration-300 px-8 py-3 text-xs sm:text-sm">
                     Enter a tournament 
                   </button>
-                  <button className="flex items-center lato justify-center whitespace-nowrap rounded-md border border-zinc-700 bg-zinc-900 text-center text-white backdrop-blur transition-all hover:bg-zinc-800 px-8 py-3 text-xs sm:text-sm">
+                  <button onClick={handleGoToLearnMore} className="flex items-center lato justify-center whitespace-nowrap rounded-md border border-zinc-700 bg-zinc-900 text-center text-white backdrop-blur transition-all hover:bg-zinc-800 px-8 py-3 text-xs sm:text-sm">
                     Learn More
                   </button>
                 </div>

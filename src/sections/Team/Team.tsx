@@ -10,33 +10,33 @@ const teamMemberData: Array<{
 }> = [
   {
     name: "Saltorious",
-    role: "code monkey",
+    role: "The Code Monkey",
     image:
       "https://sessionize.com/image/213f-400o400o2-3qZUW9uoA7A734iEcKzsMz.jpg",
   },
   {
     name: "D0$H",
-    role: "deal maker",
+    role: "The Friendly Enforcer",
     image:
       "https://yt3.googleusercontent.com/ytc/AIdro_mYVb5hqxLtWxsiOHHu2RxYe3A4Gp_IgpLAsk7q2T2oIQI=s160-c-k-c0x00ffffff-no-rj",
   },
   {
     name: "sewlie",
-    role: "visual wizard",
+    role: "The Hype Coordinator",
     image:
-      "https://pbs.twimg.com/profile_images/1696222382917025793/VbVB8DkU_400x400.jpg",
+      "https://cdn.discordapp.com/attachments/1041123325834956821/1278417526144897075/IMG_1273.jpg?ex=66e32f9a&is=66e1de1a&hm=49814bb47b98ab959ea3c67f2d8c6226685d14b6729efb065209edb7523fb1bc&",
   },
   {
     name: "nottamali",
-    role: "chaos organizer",
+    role: "The Chaos Organizer",
     image:
-      "https://pbs.twimg.com/profile_images/1475876245938348033/cF-C5EBS_400x400.jpg",
+      "https://cdn.discordapp.com/attachments/1041123325834956821/1278418165604290608/Untitled_Artwork.jpg?ex=66e33032&is=66e1deb2&hm=10b81dfe9696cd35b11c8d1c4a2cef4cd676ceddaf16a6dc60de0ed7802a1981&",
   },
   {
     name: "vesper",
-    role: "G.O.A.T",
+    role: "The G.O.A.T",
     image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnCwNH4Ch0iV5GbcycFuso8r4igYeM96TK4Q&s",
+      "https://cdn.discordapp.com/avatars/617341181323640852/f6708d82a73e1b666e873596f11cb138.png?size=1024",
   },
 ];
 const Team: React.FC<TeamProps> = () => {

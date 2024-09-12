@@ -9,32 +9,32 @@ const Footer: React.FC<FooterProps> = ({}) => {
         <a className="hover:text-gray-900" href="#">
           Home
         </a>
-        <a className="hover:text-gray-900" href="#">
+        <a className="hover:text-gray-900" href="https://docs.gustakes.gg" target="_blank">
           Docs
         </a>
-        <a className="hover:text-gray-900" href="#">
+        <a className="hover:text-gray-900" href="https://www.immutable.com/blog/what-is-immutablex" target="_blank">
           About Immutable
         </a>
-        <a className="hover:text-gray-900" href="#">
+        <a className="hover:text-gray-900" href="https://discord.gg/gustakes" target="_blank">
           Contact Us
         </a>
       </nav>
       <div className="flex justify-center space-x-5">
-        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://discord.gg/gustakes" target="_blank" rel="noopener noreferrer">
           <img
             className="h-[25px] w-[25px]"
             src="/icons/social/regular/discord.png"
             alt="Twitter"
           />
         </a>
-        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://x.com/gu_stakes" target="_blank" rel="noopener noreferrer">
           <img
             className="h-[25px] w-[25px]"
             src="/icons/social/regular/x.png"
             alt="Twitter"
           />
         </a>
-        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.twitch.tv/gu_stakes" target="_blank" rel="noopener noreferrer">
           <img
             className="h-[25px] w-[25px]"
             src="/icons/social/regular/twitch.png"
