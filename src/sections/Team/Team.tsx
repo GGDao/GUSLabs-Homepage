@@ -24,13 +24,13 @@ const teamMemberData: Array<{
     name: "sewlie",
     role: "The Hype Coordinator",
     image:
-      "https://cdn.discordapp.com/attachments/1041123325834956821/1278417526144897075/IMG_1273.jpg?ex=66e32f9a&is=66e1de1a&hm=49814bb47b98ab959ea3c67f2d8c6226685d14b6729efb065209edb7523fb1bc&",
+      "https://cdn.discordapp.com/avatars/546465300867055636/0414e42b4e10ffe1fec882804684960d.png?size=1024",
   },
   {
     name: "nottamali",
     role: "The Chaos Organizer",
     image:
-      "https://cdn.discordapp.com/attachments/1041123325834956821/1278418165604290608/Untitled_Artwork.jpg?ex=66e33032&is=66e1deb2&hm=10b81dfe9696cd35b11c8d1c4a2cef4cd676ceddaf16a6dc60de0ed7802a1981&",
+      "https://pbs.twimg.com/profile_images/1475876245938348033/cF-C5EBS_400x400.jpg",
   },
   {
     name: "vesper",
