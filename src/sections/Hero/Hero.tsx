@@ -138,7 +138,7 @@ const Hero: React.FC<HeroProps> = () => {
             className="mb-5 mt-0 md:mt-10 flex items-center justify-center gap-x-6 lg:justify-start"
           >
             <a
-              href="https://tournaments.gustakes.gg"
+              href="https://app.gustakes.gg"
               className="rounded-md goldman bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
             >
               Enter a Tournament

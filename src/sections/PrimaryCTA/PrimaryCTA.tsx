@@ -4,7 +4,7 @@ import { Fade } from "react-awesome-reveal";
 interface PrimaryCTAProps {}
 
 const PrimaryCTA: React.FC<PrimaryCTAProps> = () => {
-  const handleGoToTournament = () => window.location.href = "https://tournaments.gustakes.gg"
+  const handleGoToTournament = () => window.location.href = "https://app.gustakes.gg"
   const handleGoToLearnMore = () => window.open("https://docs.gustakes.gg")
   return (
     <div className="relative h-full w-full bg-[rgb(10,10,10)] pb-60">
