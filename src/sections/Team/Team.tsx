@@ -30,13 +30,13 @@ const teamMemberData: Array<{
     name: "nottamali",
     role: "The Chaos Organizer",
     image:
-      "https://pbs.twimg.com/profile_images/1475876245938348033/cF-C5EBS_400x400.jpg",
+     "https://res.cloudinary.com/dsrjjqkjs/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1730484695/nottamali_hhbtes.png",
   },
   {
     name: "vesper",
     role: "The G.O.A.T",
     image:
-      "https://cdn.discordapp.com/avatars/617341181323640852/f6708d82a73e1b666e873596f11cb138.png?size=1024",
+      "https://res.cloudinary.com/dsrjjqkjs/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1730484750/QmMoj2PJ_400x400_mka8fq.jpg",
   },
 ];
 const Team: React.FC<TeamProps> = () => {
