@@ -21,3 +21,19 @@
 .clip-path {
   clip-path: polygon(25% 0, 100% 0, 100% 76%, 76% 100%, 0 100%, 0 27%);
 }
+
+.gus-font-body {
+  font-family: "Lato", sans-serif;
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.5;
+}
+
+.gus-font-header {
+  font-family: "Goldman", sans-serif;
+  font-size: 2.25rem; /* 36px */
+  line-height: 1.2;
+}
+
+body {
+  overflow-x: hidden;
+}
