@@ -1,16 +1,10 @@
 import React, { useEffect } from "react";
 import VideoPlayer from "../../components/VideoPlayer/VideoPlayer";
 import Navbar from "../../components/Navbar/Navbar";
-import { useSpring, useTrail, animated, easings } from "@react-spring/web";
+import { useSpring, animated, easings } from "@react-spring/web";
 
 interface HeroProps {}
 const delay = 500;
-const games = [
-  {
-    img: "/gu_logo.png",
-    link: "https://godsunchained.com/",
-  },
-];
 
 const Hero: React.FC<HeroProps> = () => {
   const urlNum = Math.floor(Math.random() * 4) + 1;
@@ -87,14 +81,7 @@ const Hero: React.FC<HeroProps> = () => {
     []
   );
 
-  const trail = useTrail(games.length, {
-    config: { mass: 5, tension: 2000, friction: 200 },
-    delay: 700,
-    opacity: 1,
-    x: 0,
-    height: 80,
-    from: { opacity: 0, x: 20, height: 0 },
-  });
+
 
   useEffect(() => {
     leftAnimateAPI.start();
@@ -110,10 +97,10 @@ const Hero: React.FC<HeroProps> = () => {
           <VideoPlayer url={`/backgrounds/${urlNum}.mp4`} />
         </div>
       </div>
-      <div className="absolute top-0 left-0 h-screen w-full blur-3xl bg-gradient-to-b from-[rgba(10,10,10,0.5)]  via-[rgba(10,10,10,0.75)] to-[rgb(10,10,10)]" />
-      <div className="z-10 h-screen absolute w-full bg-gradient-to-b from-[rgba(10,10,10,0.5)]  via-[rgba(10,10,10,0.75)] to-[rgb(10,10,10)]">
+      <div className="absolute top-0 left-0 h-screen w-full blur-3xl bg-gradient-to-b from-[rgba(10,10,10,0.3)]  via-[rgba(10,10,10,0.6)] to-[rgb(10,10,10)]" />
+      <div className="z-10 h-screen absolute w-full bg-gradient-to-b from-[rgba(10,10,10,0.3)]  via-[rgba(10,10,10,0.6)] to-[rgb(10,10,10)]">
         <Navbar />
-        <div className="flex flex-col items-center justify-center lg:space-y-3 mt-5 md:mt-28">
+        <div className="flex flex-col items-center justify-center lg:space-y-3 mt-8 md:mt-28">
           <div
             style={{
               filter: "drop-shadow(0px 0px 10px rgba(178,113,188,0.85))",
@@ -128,59 +115,27 @@ const Hero: React.FC<HeroProps> = () => {
           </div>
           <animated.div
             style={bottomAnimateProps}
-            className="text-white goldman xl:text-2xl lg:text-lg md:text-[1.75rem] sm:text-[2rem] text-center p-10 pt-5 hover:text-red-500"
+            className="text-white gus-font-header xl:text-xl lg:text-lg md:text-[1.75rem] sm:text-[2rem] text-center p-10 pt-5 hover:text-red-500"
           >
-            Step into the arena. Stake your Coin. Domainate tournaments. Cement
-            your legacy.
+            Step into the Arena. Stake your Coin. Dominate the Opposition and Cement your Legacy.
           </animated.div>
           <animated.div
             style={bottomAnimateProps}
-            className="mb-5 mt-0 md:mt-10 flex items-center justify-center gap-x-6 lg:justify-start"
+            className="mb-5 mt-5 md:mt-10 flex items-center justify-center gap-x-6 lg:justify-start"
           >
-            <a
-              href="https://app.gustakes.gg"
-              className="rounded-md goldman bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-            >
-              Enter a Tournament
-            </a>
-            <a
-              href="https://docs.gustakes.gg"
-              target="_blank"
-              className="text-sm goldman font-semibold leading-6 text-white"
-            >
-              Learn more <span aria-hidden="true">→</span>
+          <a
+            href="https://app.gustakes.gg"
+            className="rounded-2xl gus-font-header px-3.5 py-2.5 text-xl font-semibold text-yellow-900 shadow-lg hover:text-yellow-800 transition-all duration-200 animate-pulse
+              bg-[linear-gradient(to_bottom,_#fef08a,_#ffffff_10%,_#facc15_50%,_#b45309)] [animation-duration:3s]"
+          >
+              Get Started Now!  
             </a>
           </animated.div>
         </div>
-        <div className="h-fit w-full flex items-center justify-center mt-0 md:mt-60 lg:mt-20">
-          {trail.map(({ height, ...style }, index) => {
-            let width;
-            if (games[index].img.startsWith("/valeria")) width = "w-[350px]";
-            else width = "w-[100px] md:w-[200px]";
-            return (
-              <animated.div key={index} className="trails-text" style={style}>
-                <a
-                  href={games[index].link}
-                  target="_blank"
-                  className="hover:cursor-pointer"
-                >
-                  <img className={`${width} h-auto`} src={games[index].img} />
-                </a>
-              </animated.div>
-            );
-          })}
-        </div>
-        <animated.div
-          style={bottomAnimateProps}
-          className="relative h-fit w-full flex flex-col items-center justify-center mt-14"
-        >
-          <div className="goldman text-[1.5rem] uppercase text-white">
-            Explore
-          </div>
-          <div className="text-[1.35em] text-white animate-bounce">
-            <i className="fa-solid fa-chevron-down"></i>
-          </div>
-        </animated.div>
+        {/* Non-clickable, transparent Gods Unchained logo - positioned to look like part of background */}
+        <div className="absolute bottom-20 right-20 z-5 pointer-events-none fade-out-logo">
+  <img className="w-[200px] md:w-[300px] h-auto opacity-10" src="/gu_logo.png" />
+</div>
       </div>
     </div>
   );

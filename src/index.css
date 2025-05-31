@@ -37,3 +37,8 @@
 body {
   overflow-x: hidden;
 }
+
+.fade-out-logo {
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+}
