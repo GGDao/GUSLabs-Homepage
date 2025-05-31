@@ -38,12 +38,18 @@ const teamMemberData: Array<{
     image:
       "https://res.cloudinary.com/dsrjjqkjs/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1730484750/QmMoj2PJ_400x400_mka8fq.jpg",
   },
+  {
+    name: "CodeRad",
+    role: "The Flexbox Whisperer",
+    image:
+      "coderad.png",
+  },
 ];
 const Team: React.FC<TeamProps> = () => {
   return (
     <div className="relative h-full w-full flex flex-col items-center justify-center bg-[rgb(10,10,10)] py-44">
-      <div className="goldman text-white text-[3rem]">Meet the team</div>
-      <div className="oswald text-white text-xl my-10 max-w-[700px] text-center font-semibold">
+      <div className="gus-font-header text-white text-[3rem]">Meet the team</div>
+      <div className="gus-font-body text-white text-xl my-10 max-w-[700px] text-center font-semibold">
         GUSLabs is a community grown project with many contributors from the
         web3 gaming space. But these few individuals make the magic happen
       </div>
@@ -55,7 +61,7 @@ const Team: React.FC<TeamProps> = () => {
                 <div className="flex flex-col justify-center w-full px-8 mx-6 my-12 text-center rounded-md md:w-96 lg:w-80 xl:w-64 dark:bg-gray-800 dark:text-gray-100">
                   <img
                     alt=""
-                    className="self-center flex-shrink-0 w-24 h-24 -mt-12 bg-center bg-cover rounded-full dark:bg-gray-500"
+                    className="self-center flex-shrink-0 w-24 h-24 -mt-12 bg-center bg-cover rounded-full dark:bg-black"
                     src={member.image}
                   />
                   <div className="flex-1 my-4">
