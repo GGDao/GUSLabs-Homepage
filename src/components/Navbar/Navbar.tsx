@@ -9,19 +9,15 @@ const Navbar: React.FC<NavbarProps> = () => {
       <div className="w-full h-fit px-3 lg:px-10 py-6 flex items-center justify-between">
         <button>
           <div className="h-fit w-fit flex items-center justify-center">
-            <img className="h-[50px] w-[50px] md:h-[100px] md:w-[100px]" src="/gus_logo_clear.png" />
-            <div className="goldman text-[1.25rem] md:text-[3rem] text-white  text-[#4a4a4a] font-bold">
+            <img className="h-[40px] w-[40px] md:h-[70px] md:w-[70px] ml-5" src="/gus_logo_clear.png" />
+            <div className="gus-font-header text-[1rem] md:text-[2.5rem] text-white  text-[#4a4a4a] font-bold ml-2">
               <span>
               GUStakes 
               </span>
-              <sup className="oswald text-sm pl-5 -top-5 hidden md:inline-block">
-                powered by GUSlabs
-              </sup>
-
             </div>
           </div>
         </button>
-        <div className="flex items-center justify-center gap-x-5  mr-5 lg:mr-32">
+        <div className="flex items-center justify-center gap-x-5  mr-2 lg:mr-8">
           <a
             href="https://x.com/gu_stakes"
             target="_blank"
@@ -45,13 +41,13 @@ const Navbar: React.FC<NavbarProps> = () => {
             <i className="fa-brands fa-twitch"></i>
           </a>
 
-          <a
+          {/* <a
             href="https://gustakes.medium.com/"
             target="_blank"
             className="text-[0.75rem] md:text-[1.3335em] text-white"
           >
             <i className="fa-brands fa-medium"></i>
-          </a>
+          </a> */}
         </div>
       </div>
       {/* mobile section */}
