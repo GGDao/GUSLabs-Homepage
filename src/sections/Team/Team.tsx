@@ -40,7 +40,7 @@ const teamMemberData: Array<{
   },
   {
     name: "CodeRad",
-    role: "The Flexbox Whisperer",
+    role: "The Div Whisperer",
     image:
       "coderad.png",
   },
